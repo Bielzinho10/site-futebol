@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Futebol Hoje</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success px-3">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="f.png" alt="Futebol Hoje Logo" width="40" height="40" class="me-2" />
+        <strong>Futebol Hoje</strong>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="noticias.html">Notícias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="times.html">Times</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-4">
+    <h2 class="mb-4">Destaques do Dia</h2>
+
+    <!-- Carousel -->
+    <div id="carrosselNoticias" class="carousel slide mb-5" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carrosselNoticias" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carrosselNoticias" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carrosselNoticias" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-light text-center p-5 rounded">
+          <h3>Clássico termina empatado</h3>
+          <p>O grande jogo entre Flamengo e Palmeiras terminou em 2x2, com emoção até o final.</p>
+        </div>
+        <div class="carousel-item bg-light text-center p-5 rounded">
+          <h3>Brasileirão esquenta!</h3>
+          <p>Veja os resultados da rodada e como ficou a tabela atualizada.</p>
+        </div>
+        <div class="carousel-item bg-light text-center p-5 rounded">
+          <h3>Convocações para a Seleção</h3>
+          <p>Tite divulga os convocados para os próximos amistosos da seleção brasileira.</p>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrosselNoticias" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrosselNoticias" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+    <!-- Destaques Rápidos -->
+    <section>
+      <h3>Últimas Notícias</h3>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Novas regras da FIFA para 2025</h5>
+              <p class="card-text">A FIFA anunciou mudanças nas regras que já começam a valer na próxima temporada.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Campeonato Brasileiro começa em julho</h5>
+              <p class="card-text">A CBF confirmou o calendário oficial do Brasileirão com novidades para o segundo turno.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Flamengo anuncia novo reforço</h5>
+              <p class="card-text">O atacante argentino Martín López chega ao time rubro-negro para a sequência da temporada.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center bg-dark text-white py-3 mt-5">
+    <p>&copy; 2025 Futebol Hoje. Todos os direitos reservados.</p>
+    <div class="social">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="text-white mx-2">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Twitter" class="text-white mx-2">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="text-white mx-2">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
